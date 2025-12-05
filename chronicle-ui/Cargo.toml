@@ -1,0 +1,57 @@
+[package]
+name = "chronicle-ui"
+version = "0.1.0"
+edition = "2021"
+description = "Chronicle Dashboard - Leptos WASM frontend for personal time-series intelligence"
+
+[dependencies]
+# Leptos web framework
+leptos = { version = "0.6", features = ["csr"] }
+leptos_router = { version = "0.6", features = ["csr"] }
+
+# HTTP client for WASM
+gloo-net = "0.5"
+gloo-timers = "0.3"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# WASM bindings
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+web-sys = { version = "0.3", features = [
+    "WebSocket",
+    "MessageEvent",
+    "CloseEvent",
+    "console",
+    "Window",
+    "Document",
+    "HtmlCanvasElement",
+    "CanvasRenderingContext2d",
+    "HtmlInputElement",
+    "HtmlSelectElement",
+    "Storage",
+    # File handling for Apple Health import
+    "FileList",
+    "File",
+    "FileReader",
+    "Blob",
+    "Url",
+    "HtmlElement",
+    "HtmlAnchorElement",
+] }
+js-sys = "0.3"
+
+# Time handling
+chrono = { version = "0.4", features = ["wasmbind"] }
+
+# Panic handling
+console_error_panic_hook = "0.1"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3"
+
+[profile.release]
+lto = true
+opt-level = 'z'

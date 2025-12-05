@@ -1,0 +1,53 @@
+# Rust build artifacts
+/target/
+**/target/
+**/*.rs.bk
+Cargo.lock
+
+# WASM build output
+/chronicle-ui/dist/
+/chronicle-ui/target/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# User data - NEVER commit personal health data
+/chronicle_data/
+**/chronicle_data/
+*.wal
+*.dat
+*.db
+*.db-shm
+*.db-wal
+
+# Configuration with secrets
+config.toml
+.env
+.env.*
+*.env
+
+# Playwright MCP screenshots
+.playwright-mcp/
+
+# Apple Health exports - contains PII
+*.zip
+Apple Health*.zip
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Test output
+test_data/
