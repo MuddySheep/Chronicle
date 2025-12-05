@@ -10,7 +10,7 @@ Chronicle is a full-stack Rust application for storing, querying, visualizing, a
 
 - **Privacy First**: Your data stays on your machine. No cloud services, no data harvesting.
 - **Apple Health Integration**: Import your entire health history with one ZIP upload.
-- **AI-Powered Insights**: Connect to [MemMachine](https://github.com/MuddySheep/MemMachine) for intelligent pattern detection and natural language queries.
+- **AI-Powered Insights**: Connect to [MemMachine](https://github.com/MemMachine/MemMachine) for intelligent pattern detection and natural language queries.
 - **Real-Time Updates**: WebSocket-powered live dashboard updates.
 - **Full Stack Rust**: Backend API + WASM frontend for blazing performance.
 
