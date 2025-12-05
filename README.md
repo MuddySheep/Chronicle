@@ -285,8 +285,7 @@ See [LICENSE](LICENSE) for full details.
 - Built with [Rust](https://www.rust-lang.org/)
 - Frontend powered by [Leptos](https://leptos.dev/)
 - Styled with [Tailwind CSS](https://tailwindcss.com/)
-- AI insights by [MemMachine](https://github.com/MuddySheep/MemMachine)
-
+- AI insights by [MemMachine](https://github.com/MuddySheep/MemMachine](https://github.com/MemMachine/MemMachine)
 ---
 
 ## Support
